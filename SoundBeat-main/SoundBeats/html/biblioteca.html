@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca | SharedBeats</title>
+    <link rel="stylesheet" href="/SoundBeats/css/css.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <span class="logo-gradient">SharedBeats</span>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Ctrl + K para buscar...">
+        </div>
+
+        <div class="user-menu">
+
+            <div class="user-profile">
+                <img src="/SoundBeats/sources/img/avatar.png" class="user-avatar">
+                <span class="username">Pol</span>
+            </div>
+
+            <div class="dropdown-menu">
+                <a href="/SoundBeats/html/perfil.html">Perfil</a>
+                <a href="/SoundBeats/html/index.html">Cerrar sesión</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-section">
+            <p class="sidebar-title">NAVEGACIÓN</p>
+
+            <a href="/SoundBeats/index.html" class="sidebar-item">Inicio</a>
+            <a href="#" class="sidebar-item active">Biblioteca</a>
+            <a href="#" class="sidebar-item">Estilos</a>
+
+        </div>
+
+        <div class="sidebar-section">
+            <p class="sidebar-title">INNOVACIÓN</p>
+
+            <a href="#" class="sidebar-item">Mis Canciones</a>
+            <a href="#" class="sidebar-item">Karaoke Mode</a>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <div class="library-header">
+
+            <div>
+                <h1>Tu Biblioteca</h1>
+                <p>Gestiona tus playlists, canciones y favoritos.</p>
+            </div>
+
+            <div class="library-stats">
+
+                <div class="stat-box">
+                    <h3>3</h3>
+                    <span>PLAYLISTS</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>12</h3>
+                    <span>SUBIDAS</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>8</h3>
+                    <span>FAVORITOS</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="library-actions">
+
+            <div class="filters">
+
+                <button class="filter active">Todas</button>
+                <button class="filter">Subidas</button>
+                <button class="filter">Favoritos</button>
+                <button class="filter">Playlists</button>
+
+            </div>
+
+            <button class="btn-primary">Subir Música</button>
+
+        </div>
+
+        <!-- PLAYLISTS -->
+
+        <h2 class="library-section">Tus Playlists</h2>
+
+        <div class="playlist-grid">
+
+            <div class="playlist-card pink">
+                <h3>Synthwave Collection</h3>
+                <span>12 canciones</span>
+            </div>
+
+            <div class="playlist-card blue">
+                <h3>LoFi Focus</h3>
+                <span>28 canciones</span>
+            </div>
+
+            <div class="playlist-card green">
+                <h3>Gaming Music</h3>
+                <span>18 canciones</span>
+            </div>
+
+            <div class="playlist-card create">
+                +
+                <p>Crear Playlist</p>
+            </div>
+
+        </div>
+
+        <!-- CANCIONES -->
+
+        <h2 class="library-section">Tus Canciones</h2>
+
+        <div class="songs-table">
+
+            <div class="song-row header-row">
+
+                <span>#</span>
+                <span>Título</span>
+                <span>Género</span>
+                <span>Duración</span>
+
+            </div>
+
+            <div class="song-row">
+
+                <span>1</span>
+
+                <div>
+                    <p>Neon Dreams</p>
+                    <small>Synthwave AI</small>
+                </div>
+
+                <span>Synthwave</span>
+
+                <span>3:45 ▶</span>
+
+            </div>
+
+            <div class="song-row">
+
+                <span>2</span>
+
+                <div>
+                    <p>Digital Horizon</p>
+                    <small>SharedBeats</small>
+                </div>
+
+                <span>Electronic</span>
+
+                <span>4:10 ▶</span>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
