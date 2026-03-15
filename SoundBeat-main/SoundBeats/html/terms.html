@@ -4,37 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Política de Privacidad | SharedBeats</title>
-    <link rel="stylesheet" href="/SoundBeats/css/css.css">
+    <link rel="stylesheet" href="../css/css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- HEADER -->
-
     <header class="header">
 
+        <!-- LOGO -->
         <div class="logo">
+            <img src="../sources/icons/logo.png" class="logo-icon" alt="SharedBeats logo">
             <span class="logo-gradient">SharedBeats</span>
         </div>
 
+        <!-- SEARCH -->
         <div class="search">
+            <img src="../sources/icons/buscar.png" class="search-icon" alt="">
             <input type="text" placeholder="Ctrl + K para buscar...">
         </div>
 
-        <!-- USUARIO LOGEADO -->
-
+        <!-- USER CHIP (logged-in) -->
+        <div class="header-spacer"></div>
         <div class="user-menu">
-
             <div class="user-profile">
-                <img src="/SoundBeats/sources/img/avatar.png" class="user-avatar">
-                <span class="username">Pol</span>
+                <img src="../sources/img/avatar.png" class="user-avatar" alt="usuario">
+                <span class="username">AlexBeats</span>
+                <img src="../sources/icons/abajo.png" class="chevron-icon" alt="">
             </div>
-
             <div class="dropdown-menu">
-                <a href="/SoundBeats/html/perfil.html">Configuración</a>
-                <a href="/SoundBeats/html/login.html">Cerrar sesión</a>
+                <a href="perfil.html">Perfil</a>
+                <a href="index.html">Cerrar sesión</a>
             </div>
-
         </div>
 
     </header>
@@ -46,17 +48,34 @@
         <div class="sidebar-section">
             <p class="sidebar-title">NAVEGACIÓN</p>
 
-            <a href="/SoundBeats/index.html" class="sidebar-item">Inicio</a>
-            <a href="/SoundBeats/html/biblioteca.html" class="sidebar-item">Biblioteca</a>
-            <a href="#" class="sidebar-item">Estilos</a>
+            <a href="Index2.html" class="sidebar-item">
+                <img src="../sources/icons/inicio.png" class="sidebar-icon" alt="">
+                Inicio
+            </a>
+            <a href="biblioteca.html" class="sidebar-item">
+                <img src="../sources/icons/biblioteca.png" class="sidebar-icon" alt="">
+                Biblioteca
+            </a>
+            <a href="#" class="sidebar-item">
+                <img src="../sources/icons/estilos.png" class="sidebar-icon" alt="">
+                Estilos
+            </a>
 
         </div>
+
+        <hr class="sidebar-separator">
 
         <div class="sidebar-section">
             <p class="sidebar-title">INNOVACIÓN</p>
 
-            <a href="#" class="sidebar-item">Mis Canciones</a>
-            <a href="#" class="sidebar-item">Karaoke Mode</a>
+            <a href="#" class="sidebar-item">
+                <img src="../sources/icons/canciones.png" class="sidebar-icon" alt="">
+                Mis Canciones
+            </a>
+            <a href="#" class="sidebar-item">
+                <img src="../sources/icons/karaoke.png" class="sidebar-icon" alt="">
+                Karaoke Mode
+            </a>
 
         </div>
 

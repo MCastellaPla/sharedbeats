@@ -4,33 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Biblioteca | SharedBeats</title>
-    <link rel="stylesheet" href="/SoundBeats/css/css.css">
+    <link rel="stylesheet" href="../css/css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header class="header">
 
+        <!-- LOGO -->
         <div class="logo">
+            <img src="../sources/icons/logo.png" class="logo-icon" alt="SharedBeats logo">
             <span class="logo-gradient">SharedBeats</span>
         </div>
 
+        <!-- SEARCH -->
         <div class="search">
+            <img src="../sources/icons/buscar.png" class="search-icon" alt="">
             <input type="text" placeholder="Ctrl + K para buscar...">
         </div>
 
+        <!-- USER CHIP (logged-in) -->
+        <div class="header-spacer"></div>
         <div class="user-menu">
-
             <div class="user-profile">
-                <img src="/SoundBeats/sources/img/avatar.png" class="user-avatar">
-                <span class="username">Pol</span>
+                <img src="../sources/img/alexbeats.png" class="user-avatar" alt="usuario">
+                <span class="username">AlexBeats</span>
+                <img src="../sources/icons/abajo.png" class="chevron-icon" alt="">
             </div>
-
             <div class="dropdown-menu">
-                <a href="/SoundBeats/html/perfil.html">Perfil</a>
-                <a href="/SoundBeats/html/index.html">Cerrar sesión</a>
+                <a href="perfil.html">Perfil</a>
+                <a href="index.html">Cerrar sesión</a>
             </div>
-
         </div>
 
     </header>
@@ -42,17 +48,34 @@
         <div class="sidebar-section">
             <p class="sidebar-title">NAVEGACIÓN</p>
 
-            <a href="/SoundBeats/index.html" class="sidebar-item">Inicio</a>
-            <a href="#" class="sidebar-item active">Biblioteca</a>
-            <a href="#" class="sidebar-item">Estilos</a>
+            <a href="Index2.html" class="sidebar-item">
+                <img src="../sources/icons/inicio.png" class="sidebar-icon" alt="">
+                Inicio
+            </a>
+            <a href="#" class="sidebar-item active">
+                <img src="../sources/icons/bibliotecaactive.png" class="sidebar-icon" alt="">
+                Biblioteca
+            </a>
+            <a href="#" class="sidebar-item">
+                <img src="../sources/icons/estilos.png" class="sidebar-icon" alt="">
+                Estilos
+            </a>
 
         </div>
+
+        <hr class="sidebar-separator">
 
         <div class="sidebar-section">
             <p class="sidebar-title">INNOVACIÓN</p>
 
-            <a href="#" class="sidebar-item">Mis Canciones</a>
-            <a href="#" class="sidebar-item">Karaoke Mode</a>
+            <a href="#" class="sidebar-item">
+                <img src="../sources/icons/canciones.png" class="sidebar-icon" alt="">
+                Mis Canciones
+            </a>
+            <a href="#" class="sidebar-item">
+                <img src="../sources/icons/karaoke.png" class="sidebar-icon" alt="">
+                Karaoke Mode
+            </a>
 
         </div>
 
@@ -181,6 +204,54 @@
         </div>
 
     </main>
+
+    <!-- MUSIC PLAYER -->
+    <div class="music-player">
+
+        <!-- LEFT -->
+        <div class="player-left">
+            <img src="../sources/img/LogoCanço.png" class="player-cover" alt="cover">
+
+            <div class="player-info">
+                <p class="player-title">Neon Dreams</p>
+                <span class="player-artist">SynthWave AI</span>
+            </div>
+
+            <button class="like-btn">♡</button>
+        </div>
+
+        <!-- CENTER -->
+        <div class="player-center">
+
+            <div class="player-controls">
+                <img src="../sources/icons/shuffle.png" class="player-icon" alt="Aleatorio">
+                <img src="../sources/icons/cancoenrere.png" class="player-icon" alt="Anterior">
+                <button class="play-btn">▶</button>
+                <img src="../sources/icons/cancoendevant.png" class="player-icon" alt="Siguiente">
+                <img src="../sources/icons/bucle.png" class="player-icon" alt="Repetir">
+            </div>
+
+            <div class="player-progress">
+                <span>0:12</span>
+                <div class="progress-bar-player">
+                    <div class="progress-player"></div>
+                </div>
+                <span>2:45</span>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="player-right">
+            <img src="../sources/icons/iconakaraokeplayer.png" class="player-icon" alt="Karaoke">
+            <img src="../sources/icons/iconaplaylistplayer.png" class="player-icon" alt="Playlist">
+            <img src="../sources/icons/iconavolum.png" class="player-icon" alt="Volumen">
+            <div class="volume-bar">
+                <div class="volume-progress"></div>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 
