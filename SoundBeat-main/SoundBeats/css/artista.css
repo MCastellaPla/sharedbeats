@@ -9,7 +9,7 @@
     max-width: 1200px;
     width: 100%;
     margin-left: 267px;
-    /* Sidebar width */
+    /* Ample del menú lateral */
     padding-left: 48px;
     padding-right: 48px;
     padding-top: 100px;
@@ -25,6 +25,7 @@
     overflow: hidden;
 }
 
+/* blur i rotate s'apliquen junts per simular de fons una projecció de llum difuminada darrere de la caràtula */
 .artist-cover-bg {
     position: absolute;
     top: 30%;
@@ -128,7 +129,7 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* 2-col content */
+/* Disseny de 2 columnes per al contingut */
 .artist-content-grid {
     display: grid;
     grid-template-columns: 1fr 320px;
@@ -235,6 +236,7 @@
     opacity: 1;
 }
 
+/* L'agrupació de filtres (invert, sepia, saturate, hue-rotate) modifica manualment l'SVG base per igualar el color rosat de .btn-primary (#F64A8A) */
 .heart-pink {
     filter: invert(41%) sepia(86%) saturate(4159%) hue-rotate(320deg) brightness(101%) contrast(93%);
     opacity: 1;

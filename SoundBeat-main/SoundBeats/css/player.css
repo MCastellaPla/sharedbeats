@@ -2,6 +2,7 @@
    PREMIUM MUSIC PLAYER
 ========================== */
 
+/* position: fixed; amb bottom: 0 ancora de forma permanent el reproductor a l'eix inferior; z-index superior a 1000 prevé encavalcaments */
 .music-player {
     position: fixed;
     bottom: 0;
@@ -21,7 +22,7 @@
     z-index: 3000;
 }
 
-/* LEFT */
+/* PART ESQUERRA */
 
 .player-left {
     display: flex;
@@ -75,7 +76,7 @@
     opacity: 1;
 }
 
-/* CENTER */
+/* PART CENTRAL */
 
 .player-center {
     width: 50%;
@@ -127,7 +128,7 @@
     margin: auto;
 }
 
-/* PROGRESS */
+/* BARRA DE PROGRÉS */
 
 .player-progress {
     display: flex;
@@ -152,7 +153,7 @@
     background: white;
 }
 
-/* RIGHT */
+/* PART DRETA */
 
 .player-right {
     width: 25%;

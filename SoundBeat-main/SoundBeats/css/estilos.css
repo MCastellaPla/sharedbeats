@@ -54,7 +54,7 @@
     background: linear-gradient(135deg, #11998E, #38EF7D);
 }
 
-/* Hover efecto moderno */
+/* Efecte modern en passar per sobre */
 
 .style-card:hover {
     transform: translateY(-6px);
@@ -93,7 +93,7 @@
    ESTILOS PAGE
 ========================== */
 
-/* HERO */
+/* CAPÇALERA PRINCIPAL (HERO) */
 
 .estilos-hero {
     display: flex;
@@ -143,7 +143,7 @@
     filter: brightness(0) invert(1);
 }
 
-/* SECTION HEADINGS */
+/* TÍTOLS DE LES SECCIONS */
 
 .estilos-section {
     margin-bottom: 48px;
@@ -155,8 +155,9 @@
     margin-bottom: 20px;
 }
 
-/* GENRE GRID — 5 cols first row, 3 second row */
+/* GRAELLA DE GÈNERES */
 
+/* display: grid; amb repeat(5, 1fr) divideix el contenidor estricte en 5 columnes equiproporcionals */
 .genre-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -201,7 +202,7 @@
     filter: brightness(0) invert(1);
 }
 
-/* Individual genre gradients */
+/* Degradats personalitzats de cada gènere */
 
 .genre-synthwave {
     background: linear-gradient(135deg, #7F00FF, #c642ff);
@@ -235,7 +236,7 @@
     background: linear-gradient(135deg, #00B4DB, #0083B0);
 }
 
-/* MOOD GRID — 3 cols */
+/* GRAELLA D'ESTATS D'ÀNIM */
 
 .mood-grid {
     display: grid;
@@ -302,7 +303,7 @@
     flex-shrink: 0;
 }
 
-/* Subtle left accent per mood */
+/* Marca esquerra per cada mood */
 
 .mood-concentracion {
     border-left: 3px solid #A78BFA;

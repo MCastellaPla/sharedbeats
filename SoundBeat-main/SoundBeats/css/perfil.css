@@ -1,5 +1,5 @@
 
-/* PROFILE PAGE */
+/* PÀGINA DE PERFIL */
 
 .profile-title {
     font-size: 32px;
@@ -97,7 +97,7 @@
     text-decoration: underline;
 }
 
-/* PROFILE PAGE — new sections */
+/* NOVES SECCIONS DEL PERFIL */
 
 .field-label {
     display: block;
@@ -109,7 +109,7 @@
     text-transform: uppercase;
 }
 
-/* PREFERENCES */
+/* PREFERÈNCIES */
 
 .pref-row {
     display: flex;
@@ -136,7 +136,7 @@
     margin-top: 4px;
 }
 
-/* TOGGLE SWITCH */
+/* BOTONERA TOGGLE (Interruptor) */
 
 .toggle {
     position: relative;
@@ -172,6 +172,7 @@
     transition: 0.3s;
 }
 
+/* En activar el checkbox interior (:checked), se selecciona i modifica el color de fons del germà adjacent (.toggle-slider) mitjançant CSS */
 .toggle input:checked+.toggle-slider {
     background: linear-gradient(90deg, #F64A8A, #A78BFA);
 }
@@ -180,7 +181,7 @@
     transform: translateX(20px);
 }
 
-/* SOCIAL GRID */
+/* GRAELLA SOCIAL */
 
 .social-grid {
     display: flex;
@@ -204,6 +205,7 @@
     opacity: 1;
 }
 
+/* brightness(0) invert(1) transforma els PNGs originalment negres en color blanc pur */
 .social-icon {
     width: 28px;
     height: 28px;
@@ -217,7 +219,7 @@
     color: #9CA3AF;
 }
 
-/* PLAN CARD */
+/* TARGETA DE PLA DE SUSCRIPCIÓ */
 
 .plan-card {
     display: flex;
@@ -269,7 +271,7 @@
     filter: brightness(0) invert(1);
 }
 
-/* PROFILE ACTIONS */
+/* ACCIONS DEL PERFIL */
 
 .profile-actions {
     display: flex;

@@ -28,6 +28,7 @@
     justify-content: center;
 }
 
+/* radial-gradient centra l'aura de llum, el 0% és el color principal difuminat i el 70% fa la transició cap a completament transparent respecte al fons fosc */
 .sobre-logo-glow {
     position: absolute;
     width: 140%;

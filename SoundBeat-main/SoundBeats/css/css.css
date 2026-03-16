@@ -68,6 +68,7 @@
    MAIN LAYOUT
 ========================== */
 
+/* margin-left amb la variable d'amplada del menú evita que el contingut quedi ocult sota el sidebar fix */
 .main {
     margin-left: var(--sidebar-width);
     padding: 112px 48px 140px 48px;
@@ -97,6 +98,8 @@
     margin-top: 16px;
 }
 
+/* -webkit-background-clip: text aplica el degradat lineal del fons al text.
+   -webkit-text-fill-color: transparent amaga el color de la font per permetre que el fons sigui visible. */
 .gradient-text {
     background: linear-gradient(90deg, #F472B6, #A78BFA);
     -webkit-background-clip: text;
