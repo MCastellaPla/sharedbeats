@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SharedBeats</title>
+    <link rel="stylesheet" href="./css/sanitize.css">
+    <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/player.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- CAPÇALERA / NAVEGACIÓ -->
+    <header class="header">
+
+        <!-- LOGOTIP DE L'APP -->
+        <a href="./Index2.html" class="logo">
+            <img src="./sources/icons/logo.png" class="logo-icon" alt="SharedBeats logo">
+            <span class="logo-gradient">SharedBeats</span>
+        </a>
+
+        <!-- CAMP DE BÚSQUEDA -->
+        <div class="search">
+            <img src="./sources/icons/buscar.png" class="search-icon" alt="">
+            <input type="text" placeholder="Ctrl + K para buscar...">
+        </div>
+
+        <!-- PERFIL ACTIU (amb la sessió iniciada) -->
+        <div class="header-spacer"></div>
+        <div class="user-menu">
+            <div class="user-profile">
+                <img src="./sources/img/alexbeats.png" class="user-avatar" alt="usuario">
+                <span class="username">AlexBeats</span>
+                <img src="./sources/icons/abajo.png" class="chevron-icon" alt="">
+            </div>
+            <div class="dropdown-menu">
+                <a href="./perfil.html">Perfil</a>
+                <a href="./inicio.html">Cerrar sesión</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- MENÚ LATERAL ESQUERRE -->
+    <aside class="sidebar">
+        <div class="sidebar-section">
+            <p class="sidebar-title">NAVEGACIÓN</p>
+            <a href="#" class="sidebar-item active">
+                <img src="./sources/icons/inicioactive.png" class="sidebar-icon" alt="">
+                Inicio
+            </a>
+            <a href="./biblioteca.html" class="sidebar-item">
+                <img src="./sources/icons/biblioteca.png" class="sidebar-icon" alt="">
+                Biblioteca
+            </a>
+            <a href="./estilos.html" class="sidebar-item">
+                <img src="./sources/icons/estilos.png" class="sidebar-icon" alt="">
+                Estilos
+            </a>
+        </div>
+
+        <hr class="sidebar-separator">
+
+        <div class="sidebar-section">
+            <p class="sidebar-title">INNOVACIÓN</p>
+            <a href="#" class="sidebar-item">
+                <img src="./sources/icons/canciones.png" class="sidebar-icon" alt="">
+                Mis Canciones
+            </a>
+            <a href="#" class="sidebar-item">
+                <img src="./sources/icons/karaoke.png" class="sidebar-icon" alt="">
+                Karaoke Mode
+            </a>
+        </div>
+    </aside>
+
+    <!-- BLOC CENTRAL DE CONTINGUT -->
+    <!-- <main> rep l'amplada de marge via CSS per mantenir el menú lateral (<aside>) fix i en un nivell de jerarquia al mateix node de l'arbre DOM -->
+    <main class="main">
+
+        <!-- PORTADA PRINCIPAL -->
+        <section class="hero">
+            <div class="hero-left">
+                <span class="badge">100% ROYALTY FREE</span>
+
+                <h1 class="hero-title">
+                    Música libre para <br>
+                    <span class="gradient-text">creadores reales.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Descarga música sin derechos de autor, usa SharedBeats
+                    para descargar pistas únicas o colabora con artistas emergentes.
+                </p>
+
+                <button class="btn-white">Explorar Estilos</button>
+            </div>
+
+            <div class="hero-card">
+                <img src="./sources/img/carregantbeat.png" class="hero-card-img" alt="">
+                <h3>"Beat Lo-Fi Melancólico"</h3>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <p class="hero-card-subtitle">Generando pista única...</p>
+            </div>
+        </section>
+
+        <!-- LLISTA DE TALENTS -->
+        <section class="artists">
+            <div class="section-header">
+                <h2>Talento Emergente</h2>
+                <a href="#">Ver todos</a>
+            </div>
+
+            <div class="artist-grid">
+                <a href="./artista.html" class="artist" style="text-decoration:none; color:inherit;">
+                    <div class="avatar">
+                        <img src="./sources/img/alexbeats.png" alt="">
+                    </div>
+                    <p>Alex Beats</p>
+                    <span>Indie Pop</span>
+                </a>
+
+                <a href="./artista.html" class="artist" style="text-decoration:none; color:inherit;">
+                    <div class="avatar">
+                        <img src="./sources/img/LunaSolar.png" alt="">
+                    </div>
+                    <p>Luna Solar</p>
+                    <span>Ambient</span>
+                </a>
+
+                <a href="./artista.html" class="artist" style="text-decoration:none; color:inherit;">
+                    <div class="avatar">
+                        <img src="./sources/img/TheEchoes.png" alt="">
+                    </div>
+                    <p>The Echoes</p>
+                    <span>Rock Alt</span>
+                </a>
+
+                <a href="./artista.html" class="artist" style="text-decoration:none; color:inherit;">
+                    <div class="avatar">
+                        <img src="./sources/img/MartaLoop.png" alt="">
+                    </div>
+                    <p>Marta Loop</p>
+                    <span>Lo-Fi</span>
+                </a>
+
+                <a href="./artista.html" class="artist" style="text-decoration:none; color:inherit;">
+                    <div class="avatar">
+                        <img src="./sources/img/alexbeats.png" alt="">
+                    </div>
+                    <p>SB Generator</p>
+                    <span>IA Oficial</span>
+                </a>
+            </div>
+        </section>
+        <!-- BÚSQUEDA PER ESTIL MUSICAL -->
+        <section class="styles">
+            <h2 class="styles-title">Explora por Estilos</h2>
+
+            <div class="styles-grid">
+
+                <div class="style-card cinematic">
+                    <h3>Cinemático</h3>
+                    <img src="./sources/img/cine.png" class="style-icon" alt="">
+                </div>
+
+                <div class="style-card gaming">
+                    <h3>Gaming</h3>
+                    <img src="./sources/img/mando.png" class="style-icon" alt="">
+                </div>
+
+                <div class="style-card vlog">
+                    <h3>Vlog / Pop</h3>
+                    <img src="./sources/img/camara.png" class="style-icon" alt="">
+                </div>
+
+                <div class="style-card corporate">
+                    <h3>Corporativo</h3>
+                    <img src="./sources/img/maletin.png" class="style-icon" alt="">
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <br>
+        </section>
+        <!-- REPRODUCTOR DE MÚSICA PRO -->
+        <div class="music-player">
+
+            <!-- ESQUERRA (Portada i dades) -->
+            <div class="player-left">
+                <img src="./sources/img/LogoCanço.png" class="player-cover" alt="cover">
+
+                <div class="player-info">
+                    <p class="player-title">Neon Dreams</p>
+                    <span class="player-artist">SynthWave AI</span>
+                </div>
+
+                <button class="like-btn"><img src="./sources/icons/like.png" class="like-icon" alt="Like"></button>
+            </div>
+
+            <!-- CENTRE (Controls i temps) -->
+            <div class="player-center">
+
+                <div class="player-controls">
+                    <img src="./sources/icons/shuffle.png" class="player-icon" alt="Aleatorio">
+                    <img src="./sources/icons/cancoenrere.png" class="player-icon" alt="Anterior">
+                    <button class="play-btn"><img src="./sources/icons/playfosc.png" alt="Play"></button>
+                    <img src="./sources/icons/cancoendevant.png" class="player-icon" alt="Siguiente">
+                    <img src="./sources/icons/bucle.png" class="player-icon" alt="Repetir">
+                </div>
+
+                <div class="player-progress">
+                    <span>0:12</span>
+                    <div class="progress-bar-player">
+                        <div class="progress-player"></div>
+                    </div>
+                    <span>2:45</span>
+                </div>
+
+            </div>
+
+            <div class="player-right">
+
+                <img src="./sources/icons/iconakaraokeplayer.png" class="player-icon" alt="Karaoke">
+
+                <img src="./sources/icons/iconaplaylistplayer.png" class="player-icon" alt="Playlist">
+
+                <img src="./sources/icons/iconavolum.png" class="player-icon" alt="Volumen">
+
+                <div class="volume-bar">
+                    <div class="volume-progress"></div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

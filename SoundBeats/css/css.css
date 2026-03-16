@@ -1,0 +1,218 @@
+:root {
+    --black: #000000;
+    --dark-indigo: #2E1065;
+    --dark-pink: #831843;
+
+    --french-rose: #F64A8A;
+    --heliotrope: #DF73FF;
+    --cerise: #DE3163;
+    --mischka: #A5A9B2;
+    --gray-chateau: #9CA3AF;
+    --white: #FFFFFF;
+
+    --sidebar-width: 267px;
+}
+
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn-primary {
+    background: var(--french-rose);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.2s;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.btn-white {
+    margin-top: 24px;
+    background: white;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 100px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/* ==========================
+   MAIN LAYOUT
+========================== */
+
+/* margin-left amb la variable d'amplada del menú evita que el contingut quedi ocult sota el sidebar fix */
+.main {
+    margin-left: var(--sidebar-width);
+    padding: 112px 48px 140px 48px;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22C55E;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.hero-title {
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+/* -webkit-background-clip: text aplica el degradat lineal del fons al text.
+   -webkit-text-fill-color: transparent amaga el color de la font per permetre que el fons sigui visible. */
+.gradient-text {
+    background: linear-gradient(90deg, #F472B6, #A78BFA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+    color: var(--gray-chateau);
+    margin-top: 16px;
+    max-width: 500px;
+}
+
+.hero-card {
+    width: 380px;
+    min-height: 220px;
+    padding: 32px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--dark-indigo), var(--dark-pink));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 4px;
+}
+
+.hero-card-img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 12px;
+    opacity: 0.85;
+}
+
+.hero-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.progress-bar {
+    margin: 14px 0 8px;
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.progress {
+    width: 60%;
+    height: 100%;
+    background: var(--french-rose);
+    border-radius: 4px;
+}
+
+.hero-card-subtitle {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #6b7280;
+    text-align: center;
+}
+
+/* ==========================
+   ARTISTS
+========================== */
+
+.artists {
+    margin-top: 64px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.section-header h2 {
+    font-size: 30px;
+}
+
+.section-header a {
+    color: var(--french-rose);
+    text-decoration: none;
+}
+
+.artist-grid {
+    display: flex;
+    gap: 32px;
+}
+
+.artist {
+    text-align: center;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    background: #222;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.artist span {
+    color: var(--gray-chateau);
+    font-size: 14px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
