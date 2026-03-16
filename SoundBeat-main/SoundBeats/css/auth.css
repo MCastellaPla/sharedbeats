@@ -1,0 +1,66 @@
+/* ==========================
+   AUTH PAGES (Login / Register)
+========================== */
+
+.auth-main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top left, #2E1065, #000);
+}
+
+.auth-card {
+    width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    background: #111;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.auth-card h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-card label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: var(--gray-chateau);
+}
+
+.auth-card input {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    background: #0D0D0D;
+    color: white;
+}
+
+.auth-card input:focus {
+    outline: none;
+    border: 1px solid var(--french-rose);
+}
+
+.full {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.auth-link {
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--gray-chateau);
+}
+
+.auth-link a {
+    color: var(--french-rose);
+    text-decoration: none;
+}
+

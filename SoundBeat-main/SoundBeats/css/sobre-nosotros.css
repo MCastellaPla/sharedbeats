@@ -1,0 +1,209 @@
+/* ==========================
+   SOBRE NOSOTROS (INDEX.HTML)
+========================== */
+
+.sobre-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 160px;
+}
+
+.sobre-hero {
+    text-align: center;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-logo-wrapper {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-logo-glow {
+    position: absolute;
+    width: 140%;
+    height: 140%;
+    background: radial-gradient(circle, rgba(246, 74, 138, 0.4) 0%, rgba(246, 74, 138, 0) 70%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.sobre-logo {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.sobre-title {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    color: white;
+}
+
+.sobre-subtitle {
+    font-size: 16px;
+    color: #9CA3AF;
+    line-height: 1.6;
+}
+
+.sobre-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 60px;
+}
+
+.sobre-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 32px;
+}
+
+.sobre-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.sobre-card-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-card-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.sobre-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.sobre-card-text {
+    font-size: 14px;
+    color: #9CA3AF;
+    line-height: 1.7;
+}
+
+.sobre-card-text strong {
+    color: white;
+}
+
+.sobre-section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    width: 100%;
+    max-width: 900px;
+    text-align: left;
+}
+
+.sobre-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 80px;
+    margin-top: 24px;
+}
+
+.sobre-pilar-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    height: 150px;
+}
+
+.sobre-pilar-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.sobre-pilar-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.sobre-section-subtitle {
+    font-size: 14px;
+    color: #9CA3AF;
+    margin-bottom: 48px;
+    width: 100%;
+    max-width: 900px;
+    text-align: left;
+}
+
+.sobre-team-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.sobre-team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sobre-team-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    background: #18212f;
+    padding: 2px;
+    border: 3px solid transparent;
+}
+
+.sobre-team-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.sobre-team-role {
+    font-size: 11px;
+    color: #9CA3AF;
+}
+

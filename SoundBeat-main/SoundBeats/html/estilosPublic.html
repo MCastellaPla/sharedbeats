@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estilos | SharedBeats</title>
+    <link rel="stylesheet" href="../css/sanitize.css">
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/player.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <!-- LOGO -->
+        <a href="inicio.html" class="logo">
+            <img src="../sources/icons/logo.png" class="logo-icon" alt="SharedBeats logo">
+            <span class="logo-gradient">SharedBeats</span>
+        </a>
+
+        <!-- SEARCH -->
+        <div class="search">
+            <img src="../sources/icons/buscar.png" class="search-icon" alt="">
+            <input type="text" placeholder="Filtrar mis canciones...">
+        </div>
+
+        <!-- SPACER + AUTH BUTTONS (logged-out) -->
+        <div class="header-spacer"></div>
+        <div class="header-buttons">
+            <a href="login.html" class="btn-secondary">Iniciar sesión</a>
+            <a href="register.html" class="btn-primary">Registrarse</a>
+        </div>
+
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-section">
+            <p class="sidebar-title">NAVEGACIÓN</p>
+
+            <a href="inicio.html" class="sidebar-item">
+                <img src="../sources/icons/inicio.png" class="sidebar-icon" alt="">
+                Inicio
+            </a>
+            <a href="login.html" class="sidebar-item">
+                <img src="../sources/icons/biblioteca.png" class="sidebar-icon" alt="">
+                Biblioteca
+            </a>
+            <a href="estilosPublic.html" class="sidebar-item active">
+                <img src="../sources/icons/estilosactive.png" class="sidebar-icon" alt="">
+                Estilos
+            </a>
+
+        </div>
+
+        <hr class="sidebar-separator">
+
+        <div class="sidebar-section">
+            <p class="sidebar-title">INNOVACIÓN</p>
+
+            <a href="login.html" class="sidebar-item">
+                <img src="../sources/icons/canciones.png" class="sidebar-icon" alt="">
+                Mis Canciones
+            </a>
+            <a href="login.html" class="sidebar-item">
+                <img src="../sources/icons/karaoke.png" class="sidebar-icon" alt="">
+                Karaoke Mode
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- HERO -->
+        <div class="estilos-hero">
+            <div class="estilos-hero-text">
+                <h1 class="estilos-title">Descubre tu <span class="gradient-text">sonido</span></h1>
+                <p class="estilos-subtitle">Explora miles de pistas libres de derechos agrupadas por género, energía y temática.</p>
+            </div>
+            <a href="register.html" class="btn-play-featured">
+                <img src="../sources/icons/playfosc.png" class="btn-play-icon" alt="">
+                Escuchar "Neon Dreams"
+            </a>
+        </div>
+
+        <!-- GÉNEROS PRINCIPALES -->
+        <section class="estilos-section">
+            <h2 class="estilos-section-title">Géneros Principales</h2>
+            <div class="genre-grid">
+
+                <div class="genre-card genre-synthwave">
+                    <span class="genre-name">Synthwave</span>
+                    <img src="../sources/icons/estilos/synthwave.png" class="genre-icon" alt="">
+                </div>
+
+                <div class="genre-card genre-lofi">
+                    <span class="genre-name">Lo-Fi</span>
+                    <img src="../sources/icons/estilos/lo-fi.png" class="genre-icon" alt="">
+                </div>
+
+                <div class="genre-card genre-rock">
+                    <span class="genre-name">Rock / Metal</span>
+                    <img src="../sources/icons/estilos/rock.png" class="genre-icon" alt="">
+                </div>
+
+                <div class="genre-card genre-pop">
+                    <span class="genre-name">Pop</span>
+                    <img src="../sources/icons/estilos/pop.png" class="genre-icon" alt="">
+                </div>
+
+                <div class="genre-card genre-cinematico">
+                    <span class="genre-name">Cinemático</span>
+                    <img src="../sources/icons/estilos/cinematico.png" class="genre-icon" alt="">
+                </div>
+
+                <div class="genre-card genre-clasica">
+                    <span class="genre-name">Clásica</span>
+                    <img src="../sources/icons/estilos/clasica.png" class="genre-icon" alt="">
+                </div>
+
+                <div class="genre-card genre-electronica">
+                    <span class="genre-name">Electrónica</span>
+                    <img src="../sources/icons/estilos/electronica.png" class="genre-icon" alt="">
+                </div>
+
+                <div class="genre-card genre-hiphop">
+                    <span class="genre-name">Hip-Hop</span>
+                    <img src="../sources/icons/estilos/hip-hop.png" class="genre-icon" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ESTADOS DE ÁNIMO Y TEMÁTICAS -->
+        <section class="estilos-section">
+            <h2 class="estilos-section-title">Estados de ánimo y Temáticas</h2>
+            <div class="mood-grid">
+
+                <div class="mood-card mood-concentracion">
+                    <div class="mood-content">
+                        <span class="mood-name">Concentración</span>
+                        <p class="mood-desc">Beats instrumentales perfectos para trabajar.</p>
+                    </div>
+                    <img src="../sources/icons/estilos/concentracion.png" class="mood-icon" alt="">
+                </div>
+
+                <div class="mood-card mood-gaming">
+                    <div class="mood-content">
+                        <span class="mood-name">Gaming / Streaming</span>
+                        <p class="mood-desc">Música sin copyright para tus directos en streaming.</p>
+                    </div>
+                    <img src="../sources/icons/estilos/gaming.png" class="mood-icon" alt="">
+                </div>
+
+                <div class="mood-card mood-entrenamiento">
+                    <div class="mood-content">
+                        <span class="mood-name">Entrenamiento</span>
+                        <p class="mood-desc">Alta energía (BPM > 120) para darlo todo.</p>
+                    </div>
+                    <img src="../sources/icons/estilos/entrenamiento.png" class="mood-icon" alt="">
+                </div>
+
+                <div class="mood-card mood-vlogs">
+                    <div class="mood-content">
+                        <span class="mood-name">Vlogs & Lifestyle</span>
+                        <p class="mood-desc">Sonidos alegres, indie y acústicos para tus vídeos.</p>
+                    </div>
+                    <img src="../sources/icons/estilos/blogs.png" class="mood-icon" alt="">
+                </div>
+
+                <div class="mood-card mood-noche">
+                    <div class="mood-content">
+                        <span class="mood-name">Noche / Relax</span>
+                        <p class="mood-desc">Pistas ambientales y relajantes para terminar el día.</p>
+                    </div>
+                    <img src="../sources/icons/estilos/noche.png" class="mood-icon" alt="">
+                </div>
+
+                <div class="mood-card mood-ia">
+                    <div class="mood-content">
+                        <span class="mood-badge">Novedad ✦</span>
+                        <span class="mood-name">Generado por IA</span>
+                        <p class="mood-desc">Colecciones completas creadas exclusivamente con Inteligencia Artificial.</p>
+                    </div>
+                    <img src="../sources/icons/estilos/generadoia.png" class="mood-icon" alt="">
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MUSIC PLAYER -->
+    <div class="music-player">
+
+        <!-- LEFT -->
+        <div class="player-left">
+            <img src="../sources/img/LogoCanço.png" class="player-cover" alt="cover">
+            <div class="player-info">
+                <p class="player-title">Neon Dreams</p>
+                <span class="player-artist">SynthWave AI</span>
+            </div>
+            <button class="like-btn"><img src="../sources/icons/like.png" class="like-icon" alt="Like"></button>
+        </div>
+
+        <!-- CENTER -->
+        <div class="player-center">
+            <div class="player-controls">
+                <img src="../sources/icons/shuffle.png" class="player-icon" alt="Aleatorio">
+                <img src="../sources/icons/cancoenrere.png" class="player-icon" alt="Anterior">
+                <button class="play-btn"><img src="../sources/icons/playfosc.png" alt="Play"></button>
+                <img src="../sources/icons/cancoendevant.png" class="player-icon" alt="Siguiente">
+                <img src="../sources/icons/bucle.png" class="player-icon" alt="Repetir">
+            </div>
+            <div class="player-progress">
+                <span>0:12</span>
+                <div class="progress-bar-player">
+                    <div class="progress-player"></div>
+                </div>
+                <span>2:45</span>
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="player-right">
+            <img src="../sources/icons/iconakaraokeplayer.png" class="player-icon" alt="Karaoke">
+            <img src="../sources/icons/iconaplaylistplayer.png" class="player-icon" alt="Playlist">
+            <img src="../sources/icons/iconavolum.png" class="player-icon" alt="Volumen">
+            <div class="volume-bar">
+                <div class="volume-progress"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

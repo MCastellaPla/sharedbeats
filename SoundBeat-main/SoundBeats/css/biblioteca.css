@@ -1,0 +1,220 @@
+
+/* LIBRARY */
+
+.library-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.library-header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.library-header p {
+    color: #9CA3AF;
+    font-size: 14px;
+}
+
+.library-stats {
+    display: flex;
+    gap: 12px;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 16px 24px;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat-box h3 {
+    margin: 0 0 4px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.stat-box span {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #9CA3AF;
+}
+
+/* ACTIONS */
+
+.library-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+}
+
+.filter {
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 100px;
+    color: #e5e7eb;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.filter:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.filter.active {
+    background: white;
+    color: black;
+}
+
+/* PLAYLISTS */
+
+.library-section {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 40px 0 20px 0;
+}
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.playlist-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    /* Fes el canvi de color i de posicio en 0.2s*/
+}
+
+.playlist-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateY(-4px);
+}
+
+.playlist-cover {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playlist-cover img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.playlist-info h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    color: white;
+}
+
+.playlist-info span {
+    font-size: 12px;
+    color: #9CA3AF;
+}
+
+/* Gradients for covers */
+.bg-synthwave {
+    background: linear-gradient(135deg, #F64A8A, #A78BFA);
+}
+
+.bg-lofi {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+}
+
+.bg-gaming {
+    background: linear-gradient(135deg, #22c55e, #14b8a6);
+}
+
+.playlist-card.create {
+    background: transparent;
+    border: 2px dashed rgba(255, 255, 255, 0.15);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 200px;
+}
+
+.playlist-card.create:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.playlist-card.create .create-icon {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+/* SONG TABLE */
+
+.songs-table {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.song-row {
+    display: grid;
+    grid-template-columns: 50px 1fr 150px 100px;
+    padding: 18px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.song-row:last-child {
+    border-bottom: none;
+}
+
+.song-row:not(.header-row):hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.song-row p {
+    margin: 0 0 4px 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.song-row small {
+    color: #9CA3AF;
+    font-size: 12px;
+}
+
+.header-row {
+    color: #9CA3AF;
+    font-size: 12px;
+    font-weight: 600;
+}
+

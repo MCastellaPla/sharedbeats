@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>SharedBeats</title>
+    <link rel="stylesheet" href="../css/sanitize.css">
     <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/player.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -14,10 +19,10 @@
     <header class="header">
 
         <!-- LOGO -->
-        <div class="logo">
+        <a href="Index2.html" class="logo">
             <img src="../sources/icons/logo.png" class="logo-icon" alt="SharedBeats logo">
             <span class="logo-gradient">SharedBeats</span>
-        </div>
+        </a>
 
         <!-- SEARCH -->
         <div class="search">
@@ -35,7 +40,7 @@
             </div>
             <div class="dropdown-menu">
                 <a href="perfil.html">Perfil</a>
-                <a href="index.html">Cerrar sesión</a>
+                <a href="inicio.html">Cerrar sesión</a>
             </div>
         </div>
 
@@ -53,7 +58,7 @@
                 <img src="../sources/icons/biblioteca.png" class="sidebar-icon" alt="">
                 Biblioteca
             </a>
-            <a href="#" class="sidebar-item">
+            <a href="estilos.html" class="sidebar-item">
                 <img src="../sources/icons/estilos.png" class="sidebar-icon" alt="">
                 Estilos
             </a>
@@ -113,45 +118,45 @@
             </div>
 
             <div class="artist-grid">
-                <div class="artist">
+                <a href="artista.html" class="artist" style="text-decoration:none; color:inherit;">
                     <div class="avatar">
                         <img src="../sources/img/alexbeats.png" alt="">
                     </div>
                     <p>Alex Beats</p>
                     <span>Indie Pop</span>
-                </div>
+                </a>
 
-                <div class="artist">
+                <a href="artista.html" class="artist" style="text-decoration:none; color:inherit;">
                     <div class="avatar">
                         <img src="../sources/img/LunaSolar.png" alt="">
                     </div>
                     <p>Luna Solar</p>
                     <span>Ambient</span>
-                </div>
+                </a>
 
-                <div class="artist">
+                <a href="artista.html" class="artist" style="text-decoration:none; color:inherit;">
                     <div class="avatar">
                         <img src="../sources/img/TheEchoes.png" alt="">
                     </div>
                     <p>The Echoes</p>
                     <span>Rock Alt</span>
-                </div>
+                </a>
 
-                <div class="artist">
+                <a href="artista.html" class="artist" style="text-decoration:none; color:inherit;">
                     <div class="avatar">
                         <img src="../sources/img/MartaLoop.png" alt="">
                     </div>
                     <p>Marta Loop</p>
                     <span>Lo-Fi</span>
-                </div>
+                </a>
 
-                <div class="artist">
+                <a href="artista.html" class="artist" style="text-decoration:none; color:inherit;">
                     <div class="avatar">
                         <img src="../sources/img/alexbeats.png" alt="">
                     </div>
                     <p>SB Generator</p>
                     <span>IA Oficial</span>
-                </div>
+                </a>
             </div>
         </section>
         <!-- EXPLORA POR ESTILOS -->
@@ -197,7 +202,7 @@
                     <span class="player-artist">SynthWave AI</span>
                 </div>
 
-                <button class="like-btn">♡</button>
+                <button class="like-btn"><img src="../sources/icons/like.png" class="like-icon" alt="Like"></button>
             </div>
 
             <!-- CENTER -->
@@ -206,7 +211,7 @@
                 <div class="player-controls">
                     <img src="../sources/icons/shuffle.png" class="player-icon" alt="Aleatorio">
                     <img src="../sources/icons/cancoenrere.png" class="player-icon" alt="Anterior">
-                    <button class="play-btn">▶</button>
+                    <button class="play-btn"><img src="../sources/icons/playfosc.png" alt="Play"></button>
                     <img src="../sources/icons/cancoendevant.png" class="player-icon" alt="Siguiente">
                     <img src="../sources/icons/bucle.png" class="player-icon" alt="Repetir">
                 </div>

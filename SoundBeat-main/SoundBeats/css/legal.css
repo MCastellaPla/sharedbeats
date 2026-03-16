@@ -1,0 +1,54 @@
+
+/* LEGAL PAGE */
+
+
+.legal-card {
+    background: #0b0b0b;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.legal-card h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.legal-card h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.legal-card p {
+    color: #cfcfcf;
+    margin-bottom: 10px;
+}
+
+.legal-card ul {
+    margin-left: 20px;
+    color: #cfcfcf;
+}
+
+.legal-badge {
+    background: #F64A8A;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.legal-date {
+    color: #9CA3AF;
+    margin-bottom: 20px;
+}
+
+.legal-contact {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+

@@ -3,8 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>SharedBeats</title>
+    <title>Sobre Nosotros | SharedBeats</title>
+    <link rel="stylesheet" href="../css/sanitize.css">
     <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/player.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -12,41 +16,36 @@
 
     <!-- HEADER -->
     <header class="header">
-
-        <!-- LOGO -->
-        <div class="logo">
+        <a href="inicio.html" class="logo">
             <img src="../sources/icons/logo.png" class="logo-icon" alt="SharedBeats logo">
             <span class="logo-gradient">SharedBeats</span>
-        </div>
+        </a>
 
-        <!-- SEARCH -->
         <div class="search">
             <img src="../sources/icons/buscar.png" class="search-icon" alt="">
-            <input type="text" placeholder="Ctrl + K para buscar...">
+            <input type="text" placeholder="Filtrar mis canciones...">
         </div>
 
-        <!-- SPACER + AUTH BUTTONS (logged-out) -->
         <div class="header-spacer"></div>
         <div class="header-buttons">
-            <a href="login.html" class="btn-secondary">Iniciar sesión</a>
-            <a href="register.html" class="btn-primary">Registrarse</a>
+            <a href="login.html" class="btn-secondary" style="color:#d1d5db; text-decoration:none; font-size:14px;">Iniciar Sesión</a>
+            <a href="register.html" class="btn-primary" style="text-decoration:none;">Registrarse</a>
         </div>
-
     </header>
 
     <!-- SIDEBAR -->
     <aside class="sidebar">
         <div class="sidebar-section">
             <p class="sidebar-title">NAVEGACIÓN</p>
-            <a href="#" class="sidebar-item active">
-                <img src="../sources/icons/inicioactive.png" class="sidebar-icon" alt="">
+            <a href="inicio.html" class="sidebar-item">
+                <img src="../sources/icons/inicio.png" class="sidebar-icon" alt="">
                 Inicio
             </a>
             <a href="login.html" class="sidebar-item">
                 <img src="../sources/icons/biblioteca.png" class="sidebar-icon" alt="">
                 Biblioteca
             </a>
-            <a href="#" class="sidebar-item">
+            <a href="estilosPublic.html" class="sidebar-item">
                 <img src="../sources/icons/estilos.png" class="sidebar-icon" alt="">
                 Estilos
             </a>
@@ -56,135 +55,130 @@
 
         <div class="sidebar-section">
             <p class="sidebar-title">INNOVACIÓN</p>
-            <a href="#" class="sidebar-item">
+            <a href="login.html" class="sidebar-item">
                 <img src="../sources/icons/canciones.png" class="sidebar-icon" alt="">
                 Mis Canciones
             </a>
-            <a href="#" class="sidebar-item">
+            <a href="login.html" class="sidebar-item">
                 <img src="../sources/icons/karaoke.png" class="sidebar-icon" alt="">
                 Karaoke Mode
             </a>
         </div>
     </aside>
 
-    <!-- MAIN CONTENT -->
-    <main class="main">
+    <!-- MAIN -->
+    <main class="main sobre-main">
 
         <!-- HERO -->
-        <section class="hero">
-            <div class="hero-left">
-                <span class="badge">100% ROYALTY FREE</span>
+        <div class="sobre-hero">
+            <div class="sobre-logo-wrapper">
+                <div class="sobre-logo-glow"></div>
+                <img src="../sources/icons/logo.png" class="sobre-logo" alt="">
+            </div>
+            
+            <h1 class="sobre-title">Democratizando la creación<br>musical</h1>
+            <p class="sobre-subtitle">
+                SharedBeats es una plataforma innovadora que combina la música libre de derechos<br>
+                generada por usuarios con el poder de la Inteligencia Artificial, diseñada<br>
+                específicamente para creadores de contenido.
+            </p>
+        </div>
 
-                <h1 class="hero-title">
-                    Música libre para <br>
-                    <span class="gradient-text">creadores reales.</span>
-                </h1>
-
-                <p class="hero-description">
-                    Descarga música sin derechos de autor, usa SharedBeats
-                    para descargar pistas únicas o colabora con artistas emergentes.
+        <!-- VISION / ORIGEN -->
+        <div class="sobre-grid-2">
+            <div class="sobre-card">
+                <div class="sobre-card-header">
+                    <div class="sobre-card-icon-wrapper" style="background: rgba(246, 74, 138, 0.1);">
+                        <img src="../sources/icons/nuestramision.png" class="sobre-card-icon" alt="">
+                    </div>
+                    <h2 class="sobre-card-title">Nuestra Misión</h2>
+                </div>
+                <p class="sobre-card-text">
+                    Detectamos un problema real: los creadores de contenido
+                    (estudiantes, YouTubers, streamers) dedican demasiado tiempo
+                    buscando música sin copyright que encaje con sus proyectos.
+                    Nuestra misión es ofrecer un ecosistema donde encontrar, crear
+                    y compartir música sea intuitivo, legal y colaborativo.
                 </p>
-
-                <button class="btn-white">Explorar Estilos</button>
             </div>
 
-            <div class="hero-card">
-                <img src="../sources/img/carregantbeat.png" class="hero-card-img" alt="">
-                <h3>"Beat Lo-Fi Melancólico"</h3>
-                <div class="progress-bar">
-                    <div class="progress"></div>
+            <div class="sobre-card">
+                <div class="sobre-card-header">
+                    <div class="sobre-card-icon-wrapper" style="background: rgba(167, 139, 250, 0.1);">
+                        <img src="../sources/icons/origen.png" class="sobre-card-icon" alt="">
+                    </div>
+                    <h2 class="sobre-card-title">El Origen</h2>
                 </div>
-                <p class="hero-card-subtitle">Generando pista única...</p>
+                <p class="sobre-card-text">
+                    SharedBeats nace como un proyecto académico (DCU I) para el
+                    <strong>TecnoCampus</strong>, en el Grado en Enginyeria Informàtica i
+                    Sistemes de la Informació (GEISI). Desarrollado bajo la
+                    asignatura de Interacción Persona-Ordenador (IPO), aplicando
+                    principios de Diseño Centrado en el Usuario.
+                </p>
             </div>
-        </section>
+        </div>
 
-        <!-- TALENTO EMERGENTE -->
-        <section class="artists">
-            <div class="section-header">
-                <h2>Talento Emergente</h2>
-                <a href="#">Ver todos</a>
+        <!-- PILARES -->
+        <h2 class="sobre-section-title">Nuestros Pilares</h2>
+        
+        <div class="sobre-grid-3">
+            <div class="sobre-pilar-card">
+                <img src="../sources/icons/generacionIA.png" class="sobre-pilar-icon" style="filter: invert(41%) sepia(86%) saturate(4159%) hue-rotate(320deg) brightness(101%) contrast(93%);" alt="">
+                <h3 class="sobre-pilar-title">Generación IA</h3>
             </div>
 
-            <div class="artist-grid">
-                <div class="artist">
-                    <div class="avatar">
-                        <img src="../sources/img/alexbeats.png" alt="">
-                    </div>
-                    <p>Alex Beats</p>
-                    <span>Indie Pop</span>
-                </div>
-
-                <div class="artist">
-                    <div class="avatar">
-                        <img src="../sources/img/LunaSolar.png" alt="">
-                    </div>
-                    <p>Luna Solar</p>
-                    <span>Ambient</span>
-                </div>
-
-                <div class="artist">
-                    <div class="avatar">
-                        <img src="../sources/img/TheEchoes.png" alt="">
-                    </div>
-                    <p>The Echoes</p>
-                    <span>Rock Alt</span>
-                </div>
-
-                <div class="artist">
-                    <div class="avatar">
-                        <img src="../sources/img/MartaLoop.png" alt="">
-                    </div>
-                    <p>Marta Loop</p>
-                    <span>Lo-Fi</span>
-                </div>
-
-                <div class="artist">
-                    <div class="avatar">
-                        <img src="../sources/img/alexbeats.png" alt="">
-                    </div>
-                    <p>SB Generator</p>
-                    <span>IA Oficial</span>
-                </div>
+            <div class="sobre-pilar-card">
+                <img src="../sources/icons/comunidad.png" class="sobre-pilar-icon" style="filter: invert(72%) sepia(35%) saturate(836%) hue-rotate(211deg) brightness(102%) contrast(92%);" alt="">
+                <h3 class="sobre-pilar-title">Comunidad (UGC)</h3>
             </div>
-        </section>
-        <!-- EXPLORA POR ESTILOS -->
-        <section class="styles">
-            <h2 class="styles-title">Explora por Estilos</h2>
 
-            <div class="styles-grid">
-
-                <div class="style-card cinematic">
-                    <h3>Cinemático</h3>
-                    <img src="../sources/img/cine.png" class="style-icon" alt="">
-                </div>
-
-                <div class="style-card gaming">
-                    <h3>Gaming</h3>
-                    <img src="../sources/img/mando.png" class="style-icon" alt="">
-                </div>
-
-                <div class="style-card vlog">
-                    <h3>Vlog / Pop</h3>
-                    <img src="../sources/img/camara.png" class="style-icon" alt="">
-                </div>
-
-                <div class="style-card corporate">
-                    <h3>Corporativo</h3>
-                    <img src="../sources/img/maletin.png" class="style-icon" alt="">
-                </div>
-
+            <div class="sobre-pilar-card">
+                <img src="../sources/icons/experienciainmersiva.png" class="sobre-pilar-icon" style="filter: invert(53%) sepia(90%) saturate(2250%) hue-rotate(178deg) brightness(98%) contrast(95%);" alt="">
+                <h3 class="sobre-pilar-title">Experiencia Inmersiva</h3>
             </div>
-            <br>
-            <br>
-            <br>
-        </section>
-        </section>
+        </div>
+
+        <!-- EQUIPO FUNDADOR -->
+        <h2 class="sobre-section-title">El Equipo Fundador</h2>
+        <p class="sobre-section-subtitle">Grup 101 - Diseño Centrado en el Usuario</p>
+
+        <div class="sobre-team-grid">
+            <div class="sobre-team-member">
+                <img src="../sources/img/luisanthony.png" class="sobre-team-avatar" alt="Luis Anthony">
+                <p class="sobre-team-name">Luis Anthony</p>
+                <span class="sobre-team-role">UX/UI Designer</span>
+            </div>
+
+            <div class="sobre-team-member">
+                <img src="../sources/img/marc.png" class="sobre-team-avatar" alt="Marc Castellà">
+                <p class="sobre-team-name">Marc Castellà</p>
+                <span class="sobre-team-role">UX/UI Designer</span>
+            </div>
+
+            <div class="sobre-team-member">
+                <img src="../sources/img/jofre.png" class="sobre-team-avatar" alt="Jofre Escribà">
+                <p class="sobre-team-name">Jofre Escribà</p>
+                <span class="sobre-team-role">UX/UI Designer</span>
+            </div>
+
+            <div class="sobre-team-member">
+                <img src="../sources/img/pol.png" class="sobre-team-avatar" alt="Pol Cerezo">
+                <p class="sobre-team-name">Pol Cerezo</p>
+                <span class="sobre-team-role">UX/UI Designer</span>
+            </div>
+
+            <div class="sobre-team-member">
+                <img src="../sources/img/oscar.png" class="sobre-team-avatar" alt="Oscar Corbacho">
+                <p class="sobre-team-name">Oscar Corbacho</p>
+                <span class="sobre-team-role">UX/UI Designer</span>
+            </div>
+        </div>
 
     </main>
 
     <!-- MUSIC PLAYER -->
     <div class="music-player">
-
         <!-- LEFT -->
         <div class="player-left">
             <img src="../sources/img/LogoCanço.png" class="player-cover" alt="cover">
@@ -192,7 +186,7 @@
                 <p class="player-title">Neon Dreams</p>
                 <span class="player-artist">SynthWave AI</span>
             </div>
-            <button class="like-btn">♡</button>
+            <button class="like-btn"><img src="../sources/icons/like.png" class="like-icon" alt="Like"></button>
         </div>
 
         <!-- CENTER -->
@@ -200,7 +194,7 @@
             <div class="player-controls">
                 <img src="../sources/icons/shuffle.png" class="player-icon" alt="Aleatorio">
                 <img src="../sources/icons/cancoenrere.png" class="player-icon" alt="Anterior">
-                <button class="play-btn">▶</button>
+                <button class="play-btn"><img src="../sources/icons/playfosc.png" alt="Play"></button>
                 <img src="../sources/icons/cancoendevant.png" class="player-icon" alt="Siguiente">
                 <img src="../sources/icons/bucle.png" class="player-icon" alt="Repetir">
             </div>
@@ -222,7 +216,6 @@
                 <div class="volume-progress"></div>
             </div>
         </div>
-
     </div>
 
 </body>

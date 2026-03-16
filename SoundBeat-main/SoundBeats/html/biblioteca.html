@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Biblioteca | SharedBeats</title>
+    <link rel="stylesheet" href="../css/sanitize.css">
     <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../css/biblioteca.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/player.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -14,10 +19,10 @@
     <header class="header">
 
         <!-- LOGO -->
-        <div class="logo">
+        <a href="Index2.html" class="logo">
             <img src="../sources/icons/logo.png" class="logo-icon" alt="SharedBeats logo">
             <span class="logo-gradient">SharedBeats</span>
-        </div>
+        </a>
 
         <!-- SEARCH -->
         <div class="search">
@@ -35,7 +40,7 @@
             </div>
             <div class="dropdown-menu">
                 <a href="perfil.html">Perfil</a>
-                <a href="index.html">Cerrar sesión</a>
+                <a href="inicio.html">Cerrar sesión</a>
             </div>
         </div>
 
@@ -56,7 +61,7 @@
                 <img src="../sources/icons/bibliotecaactive.png" class="sidebar-icon" alt="">
                 Biblioteca
             </a>
-            <a href="#" class="sidebar-item">
+            <a href="estilos.html" class="sidebar-item">
                 <img src="../sources/icons/estilos.png" class="sidebar-icon" alt="">
                 Estilos
             </a>
@@ -124,7 +129,10 @@
 
             </div>
 
-            <button class="btn-primary">Subir Música</button>
+            <button class="btn-premium">
+                <img src="../sources/icons/biblioteca/afegir.png" class="btn-premium-icon" alt="">
+                Subir Música
+            </button>
 
         </div>
 
@@ -134,24 +142,39 @@
 
         <div class="playlist-grid">
 
-            <div class="playlist-card pink">
-                <h3>Synthwave Collection</h3>
-                <span>12 canciones</span>
+            <div class="playlist-card">
+                <div class="playlist-cover bg-synthwave">
+                    <img src="../sources/icons/biblioteca/synthwave.png" alt="">
+                </div>
+                <div class="playlist-info">
+                    <h3>Synthwave Collection</h3>
+                    <span>12 canciones</span>
+                </div>
             </div>
 
-            <div class="playlist-card blue">
-                <h3>LoFi Focus</h3>
-                <span>28 canciones</span>
+            <div class="playlist-card">
+                <div class="playlist-cover bg-lofi">
+                    <img src="../sources/icons/biblioteca/lofi-focus.png" alt="">
+                </div>
+                <div class="playlist-info">
+                    <h3>LoFi Focus</h3>
+                    <span>28 canciones</span>
+                </div>
             </div>
 
-            <div class="playlist-card green">
-                <h3>Gaming Music</h3>
-                <span>18 canciones</span>
+            <div class="playlist-card">
+                <div class="playlist-cover bg-gaming">
+                    <img src="../sources/icons/biblioteca/gaming.png" alt="">
+                </div>
+                <div class="playlist-info">
+                    <h3>Gaming Music</h3>
+                    <span>18 canciones</span>
+                </div>
             </div>
 
             <div class="playlist-card create">
-                +
-                <p>Crear Playlist</p>
+                <span class="create-icon">+</span>
+                <span style="font-size: 14px; color: #9CA3AF; font-weight: 500;">Crear Playlist</span>
             </div>
 
         </div>
@@ -182,7 +205,7 @@
 
                 <span>Synthwave</span>
 
-                <span>3:45 ▶</span>
+                <span style="display:flex; align-items:center;">3:45 <img src="../sources/icons/playclar.png" style="width:12px; margin-left:12px; opacity:0.7; cursor:pointer;" alt=""></span>
 
             </div>
 
@@ -197,7 +220,7 @@
 
                 <span>Electronic</span>
 
-                <span>4:10 ▶</span>
+                <span style="display:flex; align-items:center;">4:10 <img src="../sources/icons/playclar.png" style="width:12px; margin-left:12px; opacity:0.7; cursor:pointer;" alt=""></span>
 
             </div>
 
@@ -217,7 +240,7 @@
                 <span class="player-artist">SynthWave AI</span>
             </div>
 
-            <button class="like-btn">♡</button>
+            <button class="like-btn"><img src="../sources/icons/like.png" class="like-icon" alt="Like"></button>
         </div>
 
         <!-- CENTER -->
@@ -226,7 +249,7 @@
             <div class="player-controls">
                 <img src="../sources/icons/shuffle.png" class="player-icon" alt="Aleatorio">
                 <img src="../sources/icons/cancoenrere.png" class="player-icon" alt="Anterior">
-                <button class="play-btn">▶</button>
+                <button class="play-btn"><img src="../sources/icons/playfosc.png" alt="Play"></button>
                 <img src="../sources/icons/cancoendevant.png" class="player-icon" alt="Siguiente">
                 <img src="../sources/icons/bucle.png" class="player-icon" alt="Repetir">
             </div>

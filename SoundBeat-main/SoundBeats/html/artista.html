@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Luna Solar - Perfil | SharedBeats</title>
+    <link rel="stylesheet" href="../css/sanitize.css">
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../css/artista.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/player.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER LOGGED IN (As requested) -->
+    <header class="header">
+        <a href="Index2.html" class="logo">
+            <img src="../sources/icons/logo.png" class="logo-icon" alt="SharedBeats logo">
+            <span class="logo-gradient">SharedBeats</span>
+        </a>
+
+        <div class="search">
+            <img src="../sources/icons/buscar.png" class="search-icon" alt="">
+            <input type="text" placeholder="Ctrl + K para buscar...">
+        </div>
+
+        <div class="header-spacer"></div>
+        <div class="user-menu">
+            <div class="user-profile">
+                <img src="../sources/img/alexbeats.png" class="user-avatar" alt="usuario">
+                <span class="username">AlexBeats</span>
+                <img src="../sources/icons/abajo.png" class="chevron-icon" alt="">
+            </div>
+            <div class="dropdown-menu">
+                <a href="perfil.html">Perfil</a>
+                <a href="inicio.html">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-section">
+            <p class="sidebar-title">NAVEGACIÓN</p>
+            <a href="Index2.html" class="sidebar-item">
+                <img src="../sources/icons/inicio.png" class="sidebar-icon" alt="">
+                Inicio
+            </a>
+            <a href="biblioteca.html" class="sidebar-item">
+                <img src="../sources/icons/biblioteca.png" class="sidebar-icon" alt="">
+                Biblioteca
+            </a>
+            <a href="estilos.html" class="sidebar-item">
+                <img src="../sources/icons/estilos.png" class="sidebar-icon" alt="">
+                Estilos
+            </a>
+        </div>
+
+        <hr class="sidebar-separator">
+
+        <div class="sidebar-section">
+            <p class="sidebar-title">INNOVACIÓN</p>
+            <a href="#" class="sidebar-item">
+                <img src="../sources/icons/canciones.png" class="sidebar-icon" alt="">
+                Mis Canciones
+            </a>
+            <a href="#" class="sidebar-item">
+                <img src="../sources/icons/karaoke.png" class="sidebar-icon" alt="">
+                Karaoke Mode
+            </a>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main artist-profile-main">
+
+        <!-- COVER & AVATAR -->
+        <div class="artist-cover">
+            <div class="artist-cover-bg"></div>
+        </div>
+
+        <div class="artist-header-info">
+            <img src="../sources/img/LunaSolar.png" class="artist-avatar" alt="Luna Solar">
+            
+            <div class="artist-details">
+                <div class="artist-details-top">
+                    <!-- Icon placeholder check -->
+                    <span style="display:flex; align-items:center; gap:4px;">
+                        <img src="../sources/icons/verificat.png" alt="Verificado" style="width:14px; height:14px;">
+                        ARTISTA VERIFICADO
+                    </span>
+                </div>
+                <h1>Luna Solar</h1>
+                <p class="artist-stats">14.2K Seguidores • 45.8K Oyentes mensuales</p>
+            </div>
+
+            <div class="artist-actions">
+                <button class="btn-seguir">Seguir</button>
+                <button class="btn-circle">•••</button>
+            </div>
+        </div>
+
+        <div class="artist-content-grid">
+            
+            <!-- LEFT COLUMN -->
+            <div class="artist-left-col">
+                
+                <div class="artist-section-header">
+                    <h2>Populares</h2>
+                    <button class="btn-play-big"><img src="../sources/icons/playfosc.png" alt="Play"></button>
+                </div>
+
+                <div class="artist-songs-table">
+                    
+                    <div class="artist-song-row">
+                        <span class="artist-song-num">1</span>
+                        <img src="../sources/img/moonlightAmbient.png" class="artist-song-cover" alt="">
+                        <div class="artist-song-info">
+                            <p class="artist-song-title">Moonlight Ambient</p>
+                            <div class="artist-song-badgewrap">
+                                <span class="artist-song-badge">Ambient</span>
+                            </div>
+                        </div>
+                        <img src="../sources/icons/like.png" class="artist-song-likes" alt="">
+                        <span class="artist-song-views"><img src="../sources/icons/views.png" alt=""> 124K</span>
+                        <span class="artist-song-duration">4:12</span>
+                    </div>
+
+                    <div class="artist-song-row">
+                        <span class="artist-song-num">2</span>
+                        <img src="../sources/img/oceanWavesSynth.png" class="artist-song-cover" alt="">
+                        <div class="artist-song-info">
+                            <p class="artist-song-title">Ocean Waves Synth</p>
+                            <div class="artist-song-badgewrap">
+                                <span class="artist-song-badge">Lo-Fi</span>
+                            </div>
+                        </div>
+                        <img src="../sources/icons/like.png" class="artist-song-likes" alt="">
+                        <span class="artist-song-views"><img src="../sources/icons/views.png" alt=""> 89K</span>
+                        <span class="artist-song-duration">3:45</span>
+                    </div>
+
+                    <div class="artist-song-row">
+                        <span class="artist-song-num">3</span>
+                        <img src="../sources/img/deepSleepProtocol.png" class="artist-song-cover" alt="">
+                        <div class="artist-song-info">
+                            <p class="artist-song-title">Deep Sleep Protocol</p>
+                            <div class="artist-song-badgewrap">
+                                <span class="artist-song-badge">Ambient</span>
+                            </div>
+                        </div>
+                        <img src="../sources/icons/like.png" class="artist-song-likes heart-pink" alt="">
+                        <span class="artist-song-views"><img src="../sources/icons/views.png" alt=""> 65K</span>
+                        <span class="artist-song-duration">5:20</span>
+                    </div>
+
+                </div>
+
+                <a href="#" class="artist-view-all">VER TODAS LAS CANCIONES</a>
+
+
+                <!-- PLAYLISTS -->
+                <div class="artist-playlists">
+                    <h2 style="font-size: 24px; font-weight: 700; color: #fff;">Playlists del artista</h2>
+                    
+                    <div class="artist-playlists-grid">
+                        
+                        <div class="artist-playlist-card">
+                            <img src="../sources/img/lofiParaEstudiar.png" class="artist-playlist-cover" alt="">
+                            <div>
+                                <h4 class="artist-playlist-title">Lo-Fi para Estudiar</h4>
+                                <p class="artist-playlist-tracks">12 pistas</p>
+                            </div>
+                        </div>
+
+                        <div class="artist-playlist-card">
+                            <img src="../sources/img/viajeEspacial.png" class="artist-playlist-cover" alt="">
+                            <div>
+                                <h4 class="artist-playlist-title">Viaje Espacial</h4>
+                                <p class="artist-playlist-tracks">8 pistas</p>
+                            </div>
+                        </div>
+
+                        <div class="artist-playlist-card">
+                            <img src="../sources/img/zenYMeditacion.png" class="artist-playlist-cover" alt="">
+                            <div>
+                                <h4 class="artist-playlist-title">Zen & Meditación</h4>
+                                <p class="artist-playlist-tracks">24 pistas</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="artist-right-col">
+                
+                <div class="artist-about-card">
+                    <h3>Acerca de</h3>
+                    <p>Productora de música Ambient y Lo-Fi con sede en Barcelona. Creando paisajes sonoros libres de derechos para ayudarte en la concentración, el relax y para dar vida a tus proyectos audiovisuales y streams.</p>
+                    
+                    <div class="artist-about-links">
+                        <a href="https://google.com" target="_blank" class="artist-about-link"><img src="../sources/icons/web.png" alt=""> lunasolarbeats.com</a>
+                        <a href="https://x.com/_StreamBeats" target="_blank" class="artist-about-link"><img src="../sources/icons/twitter.png" alt=""> @lunasolar_music</a>
+                        <a href="https://instagram.com" target="_blank" class="artist-about-link"><img src="../sources/icons/instagram.png" alt=""> @lunasolar.beats</a>
+                    </div>
+                </div>
+
+                <div class="similar-artists-container">
+                    <h4>SUS OYENTES TAMBIÉN ESCUCHAN</h4>
+                    
+                    <div class="similar-artist-row">
+                        <img src="../sources/img/SynthWaveAI.png" class="similar-avatar" alt="">
+                        <div class="similar-info">
+                            <p>SB Generator</p>
+                            <span>105k Oyentes</span>
+                        </div>
+                    </div>
+
+                    <div class="similar-artist-row">
+                        <img src="../sources/img/MartaLoop.png" class="similar-avatar" alt="">
+                        <div class="similar-info">
+                            <p>Marta Loop</p>
+                            <span>8.4k Oyentes</span>
+                        </div>
+                    </div>
+
+                    <div class="similar-artist-row">
+                        <img src="../sources/img/alexbeats.png" class="similar-avatar" alt="">
+                        <div class="similar-info">
+                            <p>Alex Beats</p>
+                            <span>22.1k Oyentes</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- MUSIC PLAYER -->
+    <div class="music-player">
+        <!-- LEFT -->
+        <div class="player-left">
+            <img src="../sources/img/LogoCanço.png" class="player-cover" alt="cover">
+            <div class="player-info">
+                <p class="player-title">Neon Dreams</p>
+                <span class="player-artist">SynthWave AI</span>
+            </div>
+            <button class="like-btn"><img src="../sources/icons/like.png" class="like-icon" alt="Like"></button>
+        </div>
+
+        <!-- CENTER -->
+        <div class="player-center">
+            <div class="player-controls">
+                <img src="../sources/icons/shuffle.png" class="player-icon" alt="Aleatorio">
+                <img src="../sources/icons/cancoenrere.png" class="player-icon" alt="Anterior">
+                <button class="play-btn"><img src="../sources/icons/playfosc.png" alt="Play"></button>
+                <img src="../sources/icons/cancoendevant.png" class="player-icon" alt="Siguiente">
+                <img src="../sources/icons/bucle.png" class="player-icon" alt="Repetir">
+            </div>
+            <div class="player-progress">
+                <span>0:12</span>
+                <div class="progress-bar-player">
+                    <div class="progress-player"></div>
+                </div>
+                <span>2:45</span>
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="player-right">
+            <img src="../sources/icons/iconakaraokeplayer.png" class="player-icon" alt="Karaoke">
+            <img src="../sources/icons/iconaplaylistplayer.png" class="player-icon" alt="Playlist">
+            <img src="../sources/icons/iconavolum.png" class="player-icon" alt="Volumen">
+            <div class="volume-bar">
+                <div class="volume-progress"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
